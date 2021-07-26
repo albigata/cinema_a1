@@ -1,3 +1,3 @@
 # Gataullina Albina
 ***
->graphdesigner
+>graph designer
