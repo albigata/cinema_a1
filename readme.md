@@ -1,2 +1,2 @@
-# Gataullina Albina
->graph designer
+# Cinema tickets
+>innopolis project
