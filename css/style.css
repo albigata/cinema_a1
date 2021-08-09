@@ -1,8 +1,11 @@
 .logo{
     width: 156px;
     height: 40px;
+    float: left;
 }
 
 .header{
-    background-image: url();
+    background: url("");
+    width: 1171px;
+    height: 728px;
 }
