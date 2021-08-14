@@ -7,41 +7,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Продажа билетов в кино в Иннополисе</title>
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        @font-face {
+            font-family: 'IBM-Plex-Sans';
+            src: url('./fonts/IBMPlexSans-Medium.ttf');
+            font-style: 'normal';
+            font-weight: 500;
+        }
+
+        @font-face {
+            font-family: 'IBM-Plex-Sans';
+            src: url('./fonts/IBMPlexSans-Thin.ttf');
+            font-style: 'normal';
+            font-weight: 100;
+        }
+
+        @font-face {
+            font-family: 'IBM-Plex-Sans';
+            src: url('./fonts/IBMPlexSans-Regular.ttf');
+            font-style: 'normal';
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: 'IBM-Plex-Sans';
+            src: url('./fonts/IBMPlexSans-SemiBold.ttf');
+            font-style: 'normal';
+            font-weight: 600;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <div class="header">
+    <header class="header">
+        <div class="menu">
             <div class="logo">
                 <a href="http://university.innopolis.ru" target="blank">
-                    <svg>
+                    <svg class="logo">
                         <use xlink:href="#innopolis-logo"></use>
                     </svg>
                 </a> 
             </div>
-            <div>
-                <a href="tel:+7 (800) 355 12-56">+7 (800) 355 12-56</a>
-                <a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a> 
-                ул.Спортивная д.1 
-                <button><img src="images/telephone.png" alt="телефон">Заказать звонок</button> 
-                <button>RU</button>
+            <div class="column"> 
+                <div class="row1">
+                    <div class="line1">
+                        <a href="tel:+7 (800) 355 12-56">+7 (800) 355 12-56</a>
+                    </div>
+                    <div class="line1">
+                        <a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a> 
+                    </div>
+                    <div class="line1">ул.Спортивная д.1 </div> 
+                    <button class="button-tel"><img src="images/telephone.png" alt="телефон"> Заказать звонок</button> 
+                    <button class="button-lang">RU <img src="images/tick.svg" alt="стрелка"></button>
+                </div>
+                <div class="row2">
+                    <div class="line2"><a href="#">EVENT DETAILS</a></div>
+                    <div class="line2"><a href="#">SPEAKERS</a></div>
+                    <div class="line2"><a href="#">SPONSORS</a></div>
+                    <div class="line2"><a href="#">PAST EVENTS</a></div>
+                    <div class="line3"><a href="#CONTACT">CONTACT</a></div> 
+                </div>
             </div>
-            <nav>
-                <ul style="list-style-type: none">
-                    <li><a href="#">EVENT DETAILS</a></li>
-                    <li><a href="#">SPEAKERS</a></li>
-                    <li><a href="#">SPONSORS</a></li>
-                    <li><a href="#">PAST EVENTS</a></li>
-                    <li><a href="#CONTACT">CONTACT</a></li>
-                </ul>
-            </nav>
-            <h1>Закажите билет в кино</h1>
-            <h2>Всем покупателям подарок!</h2>
         </div>
+        <div class="call-1">Закажите билет в кино</div>
+        <div class="call-2">Всем покупателям подарок!</div>
     </header>
 
-    <div>
-        <h2>Добро пожаловать!</h2>
+    <div class="welcome">
+        <p>Добро пожаловать!</p>
         <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam.
@@ -54,173 +87,203 @@
 
     <section>
         <h2>Почему мы?</h2>
-        <div>
-            <img src="images/Большие экраны.png" alt="Большие экраны">
-            <p><b>Большие экраны</b></p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
+        <div class="block1-row1">
+            <div class="block1">
+                <img src="images/Большие экраны.png" alt="Большие экраны">
+                <p class="why">Большие экраны</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div class="block1">
+                <img src="images/Объемный звук.png" alt="Объемный звук">
+                <p class="why">Объёмный звук</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div class="block1">
+                <img src="images/Удобные кресла.png" alt="Удобные кресла">
+                <p class="why">Удобные кресла</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
         </div>
-        <div>
-            <img src="images/Объемный звук.png" alt="Объемный звук">
-            <p><b>Объёмный звук</b></p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
-        </div>
-        <div>
-            <img src="images/Удобные кресла.png" alt="Удобные кресла">
-            <p><b>Удобные кресла</b></p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
-        </div>
-        <div>
-            <img src="images/Уютная атмосфера.png" alt="Уютная атмосфера">
-            <p><b>Уютная атмосфера</b></p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
-        </div>
-        <div>
-            <img src="images/Полное погружение.png" alt="Полное погружение">
-            <p><b>Полное погружение</b></p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
-        </div>
-        <div>
-            <img src="images/Поцелуи на заднем ряду.png" alt="Полное погружение">
-            <p><b>Поцелуи на заднем ряду</b></p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
-        </div>
+        <div class="block1-row2">
+            <div class="block1">
+                <img src="images/Уютная атмосфера.png" alt="Уютная атмосфера">
+                <p class="why">Уютная атмосфера</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div class="block1">
+                <img src="images/Полное погружение.png" alt="Полное погружение">
+                <p class="why">Полное погружение</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div class="block1"> 
+                <img src="images/Поцелуи на заднем ряду.png" alt="Полное погружение">
+                <p class="why">Поцелуи на заднем ряду</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+        </div>  
     </section>
 
     <section>
-        <h2>Выберите фильм</h2>
-        <table cellpadding="20px" style="text-align: left; border-collapse: collapse;">
-            <thead style="color: white; background-color: #A3CC40;">
-                <tr>
-                    <th>Начало сеанса</th>
-                    <th>Название фильма</th>
-                    <th>Жанр</th>
-                </tr>
-            </thead>
-            <tbody style="color: white;">
-                <tr style="background: #373737;">
-                    <td>10:00</td>
-                    <td>Человек-паук</td>
-                    <td>Фантастика, боевик, приключения</td>
-                </tr>
-                <tr style="background: #4C4D4F;">
-                    <td>12:00</td>
-                    <td>Собачья жизнь 2</td>
-                    <td>Фэнтэзи, драма, комедия</td>
-                </tr>
-                <tr style="background: #373737;">
-                    <td>14:00</td>
-                    <td>История игрушек 4</td>
-                    <td>Мультфильм, фэнтэзи, комедия</td>
-                </tr>
-                <tr style="background: #4C4D4F;">
-                    <td>16:00</td>
-                    <td>Люди в чёрном: Интэрнэшнл</td>
-                    <td>Фантастика, боевик, комедия</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                    </td> 
-                </tr>
-            </tfoot>
-        </table>
+        <h2 class="choose">Выберите фильм</h2>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="radius-1"></th>
+                        <th><a href="#">Начало сеанса <img src="images/pointer.svg" alt="указатель"></a></th>
+                        <th><a href="#">Название фильма <img src="images/pointerdown.svg" alt="галочка"></a></th>
+                        <th class="radius-2">Жанр</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="grey">
+                        <td><img src="images/tick-table.svg" alt="галочка"></td>
+                        <td>10:00</td>
+                        <td>Человек-паук</td>
+                        <td>Фантастика, боевик, приключения</td>
+                    </tr>
+                    <tr class="light-grey">
+                        <td><img src="images/tick-table.svg" alt="галочка"></td>
+                        <td>12:00</td>
+                        <td>Собачья жизнь 2</td>
+                        <td>Фэнтэзи, драма, комедия</td>
+                    </tr>
+                    <tr class="grey">
+                        <td><img src="images/tick-table.svg" alt="галочка"></td>
+                        <td>14:00</td>
+                        <td>История игрушек 4</td>
+                        <td>Мультфильм, фэнтэзи, комедия</td>
+                    </tr>
+                    <tr class="light-grey">
+                        <td class="radius-3"><img src="images/tick-table.svg" alt="галочка"></td>
+                        <td>16:00</td>
+                        <td>Люди в чёрном: Интэрнэшнл</td>
+                        <td class="radius-4">Фантастика, боевик, комедия</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>  
+        <div class="undertable">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </div> 
     </section>
 
-    <section>
-        <div><img src="images/Подарок.png" alt="Подарок"></div>
+    <section class="gift">
+        <div class="gift-image"><img src="images/Подарок.png" alt="Подарок"></div>
         <h2>Подарок каждому!</h2>
         <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id at aliquam praesentium tenetur voluptates
-                delectus pariatur, minus maxime a vel blanditiis dolor voluptate nisi voluptatum, ipsam dolores, nam
-                culpa nulla.
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.
             </p>
-            <p>Velit fugiat odit modi maiores assumenda necessitatibus tempora voluptates numquam architecto, ipsum
-                natus possimus a delectus libero, officia error in pariatur deserunt. Obcaecati deserunt libero aperiam,
-                eligendi commodi adipisci omnis.
+            <p>
+                Nunc vel risus commodo viverra maecenas accumsan. Morbi enim nunc faucibus a. Mauris commodo quis imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. 
             </p>
-            <p>Officiis repellendus dolorem, fugiat autem consectetur alias similique culpa debitis nemo minima,
-                repudiandae, eaque perferendis placeat provident voluptas officia quibusdam a! Facilis, a! Ducimus
-                excepturi officia mollitia aliquam. Quam, adipisci.
+            <p>
+                ONibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Facilisi cras fermentum odio eu feugiat pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum.
             </p>
         </div>
-        <button>Получить подарок</button>
+        <button class="getgift">Получить подарок</button>
     </section>
     
-    <section>
+    <section class="films">
         <h2>Фильмы</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, nisi. Distinctio nostrum laudantium ex
-            obcaecati. Fugit odio voluptas, dolorem velit molestiae rem id, accusantium nulla recusandae ducimus, quam
-            similique. Velit.
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.
         </p>
-        <a href="https://www.kinopoisk.ru/film/522941/" target="_blank" title="КИНОПОИСК">
-            <div>
-                <img src="images/выживший.png" alt="Выживший">
+        <div class="filmtable">
+            <div class="film1row">
+                <div>
+                    <a href="https://www.kinopoisk.ru/film/522941/" target="_blank" title="КИНОПОИСК">
+                        <div>
+                            <img src="images/выживший.png" alt="Выживший">
+                        </div>
+                        <div>Выживший</div> 
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.kinopoisk.ru/film/900052/" target="_blank" title="КИНОПОИСК">
+                        <div>
+                            <img src="images/лед.png" alt="Лед">
+                        </div>
+                        <div>Лед</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.kinopoisk.ru/film/841700/" target="_blank" title="КИНОПОИСК">
+                        <div>
+                            <img src="images/марсианин.png" alt="Марсианин">
+                        </div>
+                        <div>Марсианин</div> 
+                    </a>     
+                </div>
             </div>
-            <div>Выживший</div> 
-        </a>
-        <a href="https://www.kinopoisk.ru/film/900052/" target="_blank" title="КИНОПОИСК">
-            <div>
-                <img src="images/лед.png" alt="Лед">
+            <div class="film2row">
+                <div>
+                    <a href="https://www.kinopoisk.ru/film/1162604/" target="_blank" title="КИНОПОИСК">
+                        <div>
+                            <img src="images/спутник.png" alt="Спутник">
+                        </div>
+                        <div>Спутник</div>   
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.kinopoisk.ru/film/1188248/" target="_blank" title="КИНОПОИСК">
+                        <div>
+                            <img src="images/калашников.png" alt="Калашников">
+                        </div>
+                        <div>Калашников</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.kinopoisk.ru/film/601933/" target="_blank" title="КИНОПОИСК">
+                        <div>
+                            <img src="images/территория.png" alt="Территория">
+                        </div>
+                        <div>Территория</div>
+                    </a>
+                </div>
             </div>
-            <div>Лед</div>
-        </a>
-        <a href="https://www.kinopoisk.ru/film/841700/" target="_blank" title="КИНОПОИСК">
-            <div>
-                <img src="images/марсианин.png" alt="Марсианин">
+            <div class="film3row">
+                <div>
+                    <a href="https://www.kinopoisk.ru/film/447301/" target="_blank" title="КИНОПОИСК">
+                        <div>
+                            <img src="images/начало.png" alt="Начало">
+                        </div>
+                        <div>Начало</div>
+                        
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.kinopoisk.ru/film/939981/" target="_blank" title="КИНОПОИСК">
+                        <div>
+                            <img src="images/лунный свет.png" alt="Лунный свет">
+                        </div>
+                        <div>Лунный свет</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.kinopoisk.ru/film/966995/" target="_blank" title="КИНОПОИСК">
+                        <div>
+                            <img src="images/живое.png" alt="Живое">
+                        </div>
+                        <div>Живое</div>
+                    </a>
+                </div>
             </div>
-            <div>Марсианин</div> 
-        </a>      
-        <a href="https://www.kinopoisk.ru/film/1162604/" target="_blank" title="КИНОПОИСК">
-            <div>
-                <img src="images/спутник.png" alt="Спутник">
-            </div>
-            <div>Спутник</div>   
-        </a>
-        <a href="https://www.kinopoisk.ru/film/1188248/" target="_blank" title="КИНОПОИСК">
-            <div>
-                <img src="images/калашников.png" alt="Калашников">
-            </div>
-            <div>Калашников</div>
-        </a>
-        <a href="https://www.kinopoisk.ru/film/601933/" target="_blank" title="КИНОПОИСК">
-            <div>
-                <img src="images/территория.png" alt="Территория">
-            </div>
-            <div>Территория</div>
-        </a>
-        <a href="https://www.kinopoisk.ru/film/447301/" target="_blank" title="КИНОПОИСК">
-            <div>
-                <img src="images/начало.png" alt="Начало">
-            </div>
-            <div>Начало</div>
-            
-        </a>
-        <a href="https://www.kinopoisk.ru/film/939981/" target="_blank" title="КИНОПОИСК">
-            <div>
-                <img src="images/лунный свет.png" alt="Лунный свет">
-            </div>
-            <div>Лунный свет</div>
-        </a>
-        <a href="https://www.kinopoisk.ru/film/966995/" target="_blank" title="КИНОПОИСК">
-            <div>
-                <img src="images/живое.png" alt="Живое">
-            </div>
-            <div>Живое</div>
-        </a>
+        </div>
+        
     </section>
     <section>
         <h2>Товары</h2>
